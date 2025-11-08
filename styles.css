@@ -1,0 +1,204 @@
+
+/* Defining CSS Variables in the :root selector (global scope) */
+        :root {
+            /* System colors */
+            --charcoal-color: #1c1c11;
+            --fossil-color: #2e2e2e;
+            --pearl-color: #f5f5f5;
+            --azure-color: #455ffc;
+
+            /* Custom Colors */
+
+            --text-color: #ffffff;
+            --newItem2-color: #64646470;
+            --modal_blue-color: #000b33;
+            --deep_blue-color: #000824;
+            --faint_blue-color: #626785;
+
+            /* Fonts */
+            --primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-size: 16px;
+            --spacing: 1rem;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+.dm-sans{
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+button:hover, button:active, button {
+    color: white !important;
+    background: none !important;
+    background-image: none !important;
+}
+
+.e-filter-item[aria-pressed="true"] {
+    background-image: none;
+    background-color: var(--e-global-color-accent) !important;
+}
+
+ body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: 
+                /* Deep space gradient */
+                linear-gradient(45deg, #0a0a2a 0%, #1a1a4a 25%, #2d2d5a 50%, #1a1a4a 75%, #0a0a2a 100%),
+                /* Star field effect */
+                radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+                radial-gradient(2px 2px at 40px 70px, #fff, transparent),
+                radial-gradient(1px 1px at 90px 40px, #ddd, transparent),
+                radial-gradient(1px 1px at 130px 80px, #fff, transparent),
+                radial-gradient(2px 2px at 160px 30px, #eee, transparent),
+                radial-gradient(1px 1px at 200px 60px, #ddd, transparent),
+                radial-gradient(2px 2px at 250px 90px, #fff, transparent),
+                radial-gradient(1px 1px at 300px 20px, #eee, transparent),
+                radial-gradient(2px 2px at 350px 70px, #ddd, transparent),
+                radial-gradient(1px 1px at 400px 40px, #fff, transparent),
+                radial-gradient(2px 2px at 450px 80px, #eee, transparent),
+                radial-gradient(1px 1px at 500px 30px, #ddd, transparent);
+            background-size: cover, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px, 500px 500px;
+            background-blend-mode: overlay;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Mathematical equations floating in space */
+        .equation {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(100, 150, 255, 0.5);
+            white-space: pre;
+            animation: float 20s infinite linear;
+        }
+
+        .equation:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+            animation-duration: 25s;
+        }
+
+        .equation:nth-child(2) {
+            top: 25%;
+            right: 10%;
+            animation-delay: -5s;
+            animation-duration: 30s;
+        }
+
+        .equation:nth-child(3) {
+            top: 50%;
+            left: 15%;
+            animation-delay: -10s;
+            animation-duration: 35s;
+        }
+
+        .equation:nth-child(4) {
+            top: 70%;
+            right: 20%;
+            animation-delay: -15s;
+            animation-duration: 40s;
+        }
+
+        .equation:nth-child(5) {
+            top: 35%;
+            left: 60%;
+            animation-delay: -7s;
+            animation-duration: 28s;
+        }
+
+        .equation:nth-child(6) {
+            top: 80%;
+            left: 40%;
+            animation-delay: -12s;
+            animation-duration: 32s;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(20px, 15px) rotate(2deg);
+            }
+            50% {
+                transform: translate(10px, 25px) rotate(0deg);
+            }
+            75% {
+                transform: translate(-10px, 15px) rotate(-2deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        /* Glowing particles */
+        .particle {
+            position: absolute;
+            background: rgba(100, 150, 255, 0.6);
+            border-radius: 50%;
+            animation: twinkle 3s infinite alternate;
+        }
+
+        .particle:nth-child(odd) {
+            background: rgba(255, 200, 100, 0.4);
+            animation-duration: 4s;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.3; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Content container */
+    .content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            background: rgba(10, 10, 40, 0.7);
+            margin: 100px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            box-shadow: 0 0 30px rgba(100, 150, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(100, 150, 255, 0.8);
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+
