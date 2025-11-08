@@ -39,6 +39,15 @@ body {
 }
 }
 
+.nav-bar {
+    background-color: #090e2a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+}
+
 .manrope {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
