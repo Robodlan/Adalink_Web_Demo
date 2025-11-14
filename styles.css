@@ -33,7 +33,12 @@
 body {
     padding: 0;
     margin: 0;
-    
+    color: var(--text-color);
+            background-image: url("background.png");
+            
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;;
             /* min-height: 100vh; */
             /* background:  */
                 /* Deep space gradient */
@@ -123,7 +128,21 @@ body {
     /* text-align: center; */
 }
 
-bu
+.flex {
+    display: flex;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.box {
+    border : 1px solid #fff;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 200px;
+    text-align: center;
+}
 
 /* button:hover, button:active, button {
     color: white !important;
@@ -155,7 +174,7 @@ bu
     justify-content: space-between;
     align-items: center;
     }
-
+}
     .fa-solid {
         font-size: 1rem;
     }
