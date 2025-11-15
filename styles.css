@@ -86,14 +86,7 @@ body {
     justify-content: center;
 }
 
-.box {
-    border : 1px solid #fff;
-    padding: 1rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    width: 200px;
-    text-align: center;
-}
+
 
  
 
@@ -108,7 +101,7 @@ body {
 /* } */
 
 /* Small devices (phones, 375px and up) */
-@media (min-width: 375px) and (max-width: 413px) {
+@media (min-width: 320px) and (max-width: 413px) {
   /* iPhone 6/7/8, iPhone X */
   body {
     background-image: url("/images/background.png");
@@ -121,18 +114,25 @@ body {
     justify-content: space-between;
     align-items: center;
     }
-}
-    .fa-solid {
-        font-size: 1rem;
+    .box {
+    width: 90%;
+    border : 1px solid #fff;
+    /* padding: 2em; */
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    line-height: 1.4;
     }
+    .box-title  {
+     display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      }   
+    .shield {
+      width: 4rem;
+    }   
+}
+    
 
-.ul,li,a {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 1rem;
-}
-}
 
 /* Medium devices (phones, 414px and up) */
 @media (min-width: 414px) {
